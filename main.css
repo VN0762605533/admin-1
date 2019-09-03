@@ -1,0 +1,23 @@
+.bg-green {
+	background-color: #3A9B20;
+}
+
+.h-100vh {
+	height: 100vh
+}
+
+.image-user {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.border-50 {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+.mb-1px {
+	margin-bottom: 1px solid #000;
+}
