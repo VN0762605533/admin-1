@@ -45,7 +45,7 @@
 			<div class="col-sm-12 col-md-10 col-lg-10 main-content">
 				<div class="row mb-2 mt-3">
 					<!-- <div class="col-lg-12 mt-3 mb-3"> -->
-						<div class="col-sm-12 col-md-1 col-lg-1 text-center">
+						<div class="col-sm-12 col-md-1 col-lg-1 text-center mb-4">
 							<div class="toggle-sidebar">
 								<i class="fas fa-bars"></i>
 							</div>
@@ -80,72 +80,84 @@
 				</div>
 				<hr class="shadow">
 				
-				<!-- <div class="row">
-					<div class="col-lg-6 text-center">
-						<div class="card py-2 w-50 m-auto">
-							<div class="image-user py-2">
-								<img class="rounded-circle" src="image/image1.jpg" width="150px" height="150px">
-							</div>	
-							<div class="mt-2">
-								<h5>Anonymous Name</h5>
-								<small>Female</small>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-							<h5 class="pb-2">Update</h5>
-							<div class="input-group mb-4">
-								<input type="text" name="userName" placeholder="Anonymous Name" class="form-control">
-							</div>
-							<div class="d-flex mb-4">
-								<div class="form-check mr-2">
-									<label class="form-check-label"><input type="checkbox" name="gender" class="form-check-input" value=""> Nam
-									</label>
-								</div>
-								<div class="form-check">
-									<label class="form-check-label">
-										<input type="checkbox" name="gabder" class="form-check-input" value="" checked> Nữ
-									</label>
-								</div>
-							</div>
-							<div class="input-group mb-4">
-								<input type="number" name="phone number" placeholder="phone" class="form-control">
-							</div>
-							<div class="input-group mb-4">
-								<input type="text" name="andress" placeholder="123 ABC street" class="form-control">
-							</div>
-							<div class="input-group mb-4">
-								<input type="text" name="email" placeholder="example@gmail.com" class="form-control">
-							</div>
-
-							<div class="input-group mb-4">
-								<input type="password" name="password" placeholder="password" class="form-control">
-							</div>
-							<div class="input-group mb-4">
-								<input type="password" name="password" placeholder="replace password" class="form-control">
-							</div>
-							<button type="button" class="btn btn-outline-success">Lưu thay đổi</button>
-					</div>
-				</div> -->
-
-				<div class="row">
-					<div class="col-lg-10 col-md-10 col-sm-12 offset-lg-1">
+				<div class="row mb-4">
+					<div class="col-lg-5 col-md-5 col-sm-12 offset-lg-1 offset-md-1 mb-4">
 						<div class="card">
 							<div class="card-header text-center">
-								Tin nhắn
+								<h5>Thêm danh mục cha</h5>
 							</div>
 							<div class="card-body">
-								<form>
-									<label>Tiêu đề:</label>
-									<input type="text" name="tinNhan" class="form-control">
-									<label>Nội dung:</label>
-									<textarea class="form-control"></textarea>
+								<form action="">
+									<div class="form-group">
+										<div class="mb-2">
+											<label>Tên danh mục cha:</label>
+											<input type="text" name="danhMucCha" placeholder="Danh mục..." class="form-control">
+										</div>
+										<div class="mb-2">
+											<label>Chon biểu tượng</label>
+											<select class="form-control"></select>
+										</div>
+									</div>
 								</form>
 							</div>
 							<div class="card-footer text-center">
-								<button type="button" class="btn btn-outline-success">Gửi</button>
+								<button type="button" class="btn btn-success">Thêm</button>
 							</div>
 						</div>
+					</div>
+
+					<div class="col-lg-5 col-md-5 col-sm-12">
+							<div class="card">
+								<div class="card-header text-center">
+									<h5>Thêm danh mục con</h5>
+								</div>
+								<div class="card-body">
+									<div class="form-group">
+										<div class="mb-2">
+											<label>Tên danh mục cha:</label>
+											<select class="form-control">
+												<option value="">profile</option>
+												<option value="">Quản lý khóa học</option>
+											</select>
+										</div>
+										<div class="mb-2">
+											<label>Tên danh mục con</label>
+											<input type="text" name="danhMucCon" placeholder="Danh mục..." class="form-control">
+										</div>
+										<div class="mb-2">
+											<label>Số thứ tự</label>
+											<input type="number" name="soThuTu" class="form-control">
+										</div>
+									</div>
+								</div>
+								<div class="card-footer text-center">
+									<button type="button" class="btn btn-success">Thêm</button>
+									<button type="button" class="btn btn-outline-danger">Bỏ quả</button>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="row mb-4">
+					<div class="col-lg-10 col-md-10 col-sm-12 offset-lg-1 offset-md-1">
+						<table class="table table-striper">
+							<thead class="text-center">
+								<tr>
+									<td>Danh Mục Cha</td>
+									<td>Danh Mục Con</td>
+									<td>Số thứ tự</td>
+									<td>Xóa</td>
+								</tr>
+							</thead>
+							<tbody class="text-center">
+								<tr>
+									<td>Chưa có dữ liệu nào</td>
+									<td></td>
+									<td></td>
+									<td><button type="button" class="btn btn-outline-success"><i class="fas fa-trash-alt"></i></button></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

@@ -1,9 +1,10 @@
+/*#3A9B20*/
 .bg-green {
 	background-color: #3A9B20;
 }
 
 .h-100vh {
-	height: 100vh
+	height: 100vh;
 }
 
 .image-user {
@@ -20,4 +21,25 @@
 
 .mb-1px {
 	margin-bottom: 1px solid #000;
+}
+
+.toggle-sidebar{
+	cursor: pointer;
+}
+
+.main-content{
+	-webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+
+.main-content-full{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
